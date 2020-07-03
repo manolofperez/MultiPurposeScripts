@@ -2,11 +2,11 @@
 
 library("invgamma");
 
-a=1;b=0.008
-curve(dinvgamma(x, a, b),from=0,to=0.01)
+a=3;b=0.002
+curve(dinvgamma(x, a, b),from=0,to=15)
 
-qinvgamma(c(0.025, 0.975), a, b)
+qinvgamma(c(0.025, 0.5, 0.975), a, b)
 
-aa=1; bb=10;
+aa=2; bb=2000;
 curve(dgamma(x, aa, bb), from=0, to=0.01)
 qgamma(c(0.025, 0.975), aa, bb) 
